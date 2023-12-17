@@ -1,0 +1,84 @@
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+
+.container {
+    width: 90%; /* Adjust the width for better readability on small screens */
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px; /* Added padding for better spacing */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Style the feature image */
+img {
+    display: block;
+    margin: 0 auto; /* Center the image */
+    max-width: 100%; /* Ensure the image resizes proportionally */
+}
+
+figcaption {
+    font-style: italic;
+    text-align: center;
+
+}
+
+.header {
+    text-align: center;
+    max-width: 90%; /* Limit the width of the header */
+    margin: 0 auto;
+}
+
+.byline,
+.date {
+    text-align: center;
+    margin-bottom: 10px; /* Add spacing between byline, date, and the article */
+}
+
+blockquote {
+    margin: 20px 0; /* Add space around blockquotes */
+    padding: 10px;
+    border-left: 2px solid #333;
+}
+
+.map-container {
+    text-align: center; /* Center the map */
+    margin: 20px 0; /* Add space above and below the map */
+}
+
+@media (max-width: 768px) {
+    /* No additional changes needed for smaller screens */
+}
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media (min-width: 681px) {
+    /* Any adjustments for tablets and larger screens go here. */
+    
+    /* Example: Centering the container for larger screens */
+    .container {
+        width: 80%; /* Adjust the width for larger screens */
+    }
+}
